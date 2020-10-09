@@ -1,28 +1,57 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Polibot" src="./assets/polibot.png" id="polibot">
+    <h1>polibot keeps it wavy.</h1>
+    <i>~ y o u ~ k n o w ~ t h e ~ v i b e s ~</i>
+    <Main/>
+    <Soundboard/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
+import Soundboard from './components/Soundboard.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main,
+    Soundboard,
+    Footer
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Open Sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 1em;
+  min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
+}
+#polibot {
+  max-width: 40%;
+  margin: auto;
+  display: inline-block;
+  animation: rotation 1.2s infinite ease;
+  transform: rotate(-15deg);
+}
+h1 {
+  font-weight: 800;
+}
+i {
+  font-weight: 400;
+}
+@keyframes rotation {
+  50% {
+    transform: rotate(15deg);
+  }
 }
 </style>
