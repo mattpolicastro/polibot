@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img alt="Polibot" src="https://github.com/mattpolicastro/polibot/blob/main/src/assets/polibot.png?raw=true" id="polibot">
+    <img alt="Polibot" src="../assets/polibot.png" id="polibot">
     <h1>polibot keeps it wavy</h1>
     <i>~ y o u ~ k n o w ~ t h e ~ v i b e s ~</i>
   </div>

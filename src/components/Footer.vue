@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
-    <img src="https://raw.githubusercontent.com/mattpolicastro/polibot/4b8159b84dc8596625dd24d4cb617316fe06a5ea/src/assets/heart.svg" id="heart">
-    <img src="https://raw.githubusercontent.com/mattpolicastro/polibot/4b8159b84dc8596625dd24d4cb617316fe06a5ea/src/assets/clearhead_head.svg" id="head">
+    <img src="../assets/heart.svg" id="heart">
+    <img src="../assets/clearhead_head.svg" id="head">
   </div>
 </template>
 
