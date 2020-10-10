@@ -1,8 +1,10 @@
 <template>
   <div id="container">
     <h3>soundboard</h3>
-    <i>polibot is still collecting files; in the meantime, enjoy some dings and/or dongs.</i>
-    <p></p>
+    <i>polibot is still collecting clips; in the meantime,</i>
+    <br>
+    <i>enjoy some dings and/or dongs.</i>
+    <br>
     <i>(:sir:)</i>
     <!-- <i>. keep an eye on the <a href="https://github.com/mattpolicastro/polibot" target="_blank" rel="noopener">github repo</a>.</i> -->
     <div class="layer" id="soundboard">
