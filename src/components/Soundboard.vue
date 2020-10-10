@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <h3>soundboard</h3>
-    <i>so, uh, polibot couldn't get it together—enjoy some dings and/or dongs.</i>
+    <i>polibot is still collecting files; in the meantime, enjoy some dings and/or dongs.</i>
     <p></p>
     <i>(:sir:)</i>
     <!-- <i>. keep an eye on the <a href="https://github.com/mattpolicastro/polibot" target="_blank" rel="noopener">github repo</a>.</i> -->
@@ -33,14 +33,18 @@ module.exports = {
     playSound (sound) {
       if (sound) {
         var audio = new Audio(sound);
-      audio.play();
+        audio.play();
+      }
     }
   }
-}
 }
 </script>
 
 <style scoped>
+#container {
+  width: 40em;
+  margin: auto;
+}
 button {
   margin: 1em;
   padding: auto;
@@ -52,6 +56,7 @@ button {
   border: none;
   color: #32C4F5;
   outline: none !important;
+  font-weight: bold;
 }
 button:hover {
   color: white;
@@ -63,6 +68,7 @@ button:hover {
   align-items: center;
   align-content: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #maintenance {
   z-index: 10;
