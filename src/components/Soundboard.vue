@@ -42,7 +42,7 @@ module.exports = {
 
 <style scoped>
 #container {
-  width: 40em;
+  max-width: 40em;
   margin: auto;
 }
 button {
