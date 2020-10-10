@@ -1,22 +1,25 @@
 <template>
   <div class="footer">
-    <img src="../assets/heart.svg" id="heart">
-    <img src="../assets/clearhead_head.svg" id="head">
+    <img src="https://raw.githubusercontent.com/mattpolicastro/polibot/4b8159b84dc8596625dd24d4cb617316fe06a5ea/src/assets/heart.svg" id="heart">
+    <img src="https://raw.githubusercontent.com/mattpolicastro/polibot/4b8159b84dc8596625dd24d4cb617316fe06a5ea/src/assets/clearhead_head.svg" id="head">
   </div>
 </template>
 
 <style scoped>
 img {
   display: inline-block;
-  height: 6em;
-  padding: 21em 1em 3em;
+  height: 4em;
+  margin: 3em 1em;
 }
 .footer {
-  background-color: #32C4F5;
+  /* background-color: #32C4F5; */
+  /* height: 40em; */
   width: 100%;
   bottom: 0;
   position: absolute;
-  background: #32C4F5;
-  background: linear-gradient(#ffffff 0%, #32C4F5 62.5%);
+  /* background: #32C4F5; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 </style>

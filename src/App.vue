@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <img alt="Polibot" src="./assets/polibot.png" id="polibot">
-    <h1>polibot keeps it wavy.</h1>
-    <i>~ y o u ~ k n o w ~ t h e ~ v i b e s ~</i>
-    <Main/>
+    <Header/>
     <Soundboard/>
+    <Main/>
     <Footer/>
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Soundboard from './components/Soundboard.vue'
 import Footer from './components/Footer.vue'
@@ -17,6 +16,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
+    Header,
     Main,
     Soundboard,
     Footer
@@ -25,33 +25,19 @@ export default {
 </script>
 
 <style>
+div {
+  margin-bottom: 6em;
+}
 #app {
   font-family: Open Sans, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 1em;
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
-  min-height: 100vh;
-}
-#polibot {
-  max-width: 40%;
-  margin: auto;
-  display: inline-block;
-  animation: rotation 1.2s infinite ease;
-  transform: rotate(-15deg);
-}
-h1 {
-  font-weight: 800;
-}
-i {
-  font-weight: 400;
-}
-@keyframes rotation {
-  50% {
-    transform: rotate(15deg);
-  }
+  padding-bottom: 36em;
+  margin-bottom: 0;
+  background: linear-gradient(0deg, #32C4F5  6em, #ffffff 36em);
 }
 </style>
