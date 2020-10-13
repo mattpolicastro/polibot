@@ -1,7 +1,6 @@
 <template>
   <div class="footer">
-    <img src="../assets/heart.svg" id="heart">
-    <img src="../assets/clearhead_head.svg" id="head">
+    <!-- Insert custom logos or footer contents here -->
   </div>
 </template>
 

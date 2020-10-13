@@ -1,16 +1,14 @@
 <template>
   <div id="container">
     <h3>soundboard</h3>
-    <i>polibot is still collecting clips; in the meantime,</i>
-    <br>
-    <i>enjoy some dings and/or dongs.</i>
-    <br>
-    <i>(:sir:)</i>
-    <div class="layer" id="soundboard">
+    <i v-if="!sounds.length">Here are two sample sounds, but add some clips to <code>/assets/sounds</code> to get started.</i>
+    <div v-if="sounds.length" class="soundboard">
       <button v-for="sound in sounds" :key="sound.pathShort" @click.prevent="playSound(sound.pathLong)">{{sound.pathShort.replace(/\.\//, '').replace(/\.mp3$/, '').replace(/_/g, ' ')}}</button>
     </div>
-    <button @click.prevent="playSound('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3')">ding</button>
-    <button @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')">dong</button>
+    <div v-else class="soundboard">
+      <button @click.prevent="playSound('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3')">ding</button>
+      <button @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')">dong</button>
+    </div>
   </div>
 
 </template>
@@ -66,17 +64,11 @@ button:hover {
   background-color: rgb(76, 204, 246);
   transition: 0.3s;
 }
-#soundboard {
+.soundboard {
   display: flex;
   align-items: center;
   align-content: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-}
-#maintenance {
-  z-index: 10;
-  margin: 4em auto;
-  padding: auto;
-  background-color: hsla(340, 0%, 50%, 0.5);
 }
 </style>

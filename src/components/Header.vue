@@ -1,17 +1,16 @@
 <template>
   <div>
-    <img alt="Polibot" src="../assets/polibot.png" id="polibot">
-    <h1>polibot keeps it wavy</h1>
-    <i>~ y o u ~ k n o w ~ t h e ~ v i b e s ~</i>
+    <img alt="SoundBlasterBlaster" src="" class="logo">
+    <h1>SoundBlasterBlaster</h1>
+    <i>A simple soundboard generator.</i>
   </div>
 </template>
 
 <style>
-#polibot {
+.logo {
   max-width: 24em;
-  margin: auto;
+  margin: 6em auto 2em;
   display: inline-block;
-  animation: rotation 1.2s infinite ease;
   transform: rotate(-15deg);
 }
 h1 {
@@ -20,10 +19,5 @@ h1 {
 }
 i {
   font-weight: 400;
-}
-@keyframes rotation {
-  50% {
-    transform: rotate(15deg);
-  }
 }
 </style>
