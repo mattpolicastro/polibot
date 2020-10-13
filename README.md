@@ -1,6 +1,6 @@
 # SoundBlasterBlaster
 
-A simple soundboard generator.
+A simple soundboard generator. See a demo [here](https://mattpolicastro.github.io/soundblasterblaster/).
 
 ## Project setup
 
