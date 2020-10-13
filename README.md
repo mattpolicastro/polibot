@@ -32,7 +32,7 @@ yarn lint
 ```
 
 ### Deploy
-Check the Vue.js [Configuration Reference](https://cli.vuejs.org/config/) and [Deployment](https://cli.vuejs.org/guide/deployment.html#general-guidelines) guides. Once you've configured deploy.sh (designed around Github Pages by default), you should be able to push things live.
+Check the Vue.js [Configuration Reference](https://cli.vuejs.org/config/) and [Deployment](https://cli.vuejs.org/guide/deployment.html#general-guidelines) guides. Once you've configured deploy.sh (designed around Github Pages by default) and updated `vue.config.js` with your project's public-facing GitHub Page path, you should be able to push things live.
 
 ```
 yarn deploy
