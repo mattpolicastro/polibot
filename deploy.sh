@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+###
+# Pulled from the Deployment guide from vue-cli https://cli.vuejs.org/guide/deployment.html#general-guidelines
+###
 
 # abort on errors
 set -e
