@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <h3>soundboard</h3>
+    <h3>Soundboard</h3>
     <i v-if="!sounds.length">Here are two sample sounds, but add some clips to <code>/assets/sounds</code> to get started.</i>
     <div v-if="sounds.length" class="soundboard">
       <button v-for="sound in sounds" :key="sound.pathShort" @click.prevent="playSound(sound.pathLong)">{{sound.pathShort.replace(/\.\//, '').replace(/\.mp3$/, '').replace(/_/g, ' ')}}</button>
