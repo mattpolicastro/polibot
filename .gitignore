@@ -3,6 +3,7 @@ node_modules
 /dist
 *.afdesign
 *.code-workspace
+deploy.sh
 
 # local env files
 .env.local
