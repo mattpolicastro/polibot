@@ -14,7 +14,7 @@ yarn install
 
 ### Adding clips
 
-The soundboard points to two sample clips for demonstration purposes, but it's easy to add your own. Drop your audio files in the `src/assets/sounds/` folder (named with either spaces or underscores) and they should generally take care of themselves. Sorting is arbitrary.
+The soundboard points to two sample clips for demonstration purposes when there aren't any files loaded, but it's easy to add your own. Drop your audio files in the `src/assets/sounds/` folder (named with either spaces or underscores) and they should generally take care of themselves. Sorting is arbitrary.
 
 ### Compiles and hot-reloads for development
 ```
@@ -32,7 +32,7 @@ yarn lint
 ```
 
 ### Deploy
-Check the Vue.js [Configuration Reference](https://cli.vuejs.org/config/) and [Deployment](https://cli.vuejs.org/guide/deployment.html#general-guidelines) guides. Once you've configured deploy.sh (designed around Github Pages by default) and updated `vue.config.js` with your project's public-facing GitHub Page path, you should be able to push things live.
+Check the Vue.js [Configuration Reference](https://cli.vuejs.org/config/) and [Deployment](https://cli.vuejs.org/guide/deployment.html#general-guidelines) guides. Once you've configured `deploy.sh` (designed around Github Pages by default) and updated `vue.config.js` with your project's public-facing GitHub Page path, you should be able to push things live.
 
 ```
 yarn deploy
